@@ -1,5 +1,5 @@
 {
-  "name": "@lansa/core",
+  "name": "@lansa/sample",
   "version": "1.0.0",
   "bugs": {
     "url": "https://github.com/arthurfiorette/lansa/issues"
@@ -20,15 +20,10 @@
     "test": "tsc --noEmit"
   },
   "dependencies": {
-    "@lansa/config": "workspace:^",
-    "micromatch": "^4.0.8",
     "tslib": "catalog:"
   },
   "devDependencies": {
-    "@lansa/provider-pnpm": "workspace:^",
-    "@types/micromatch": "^4.0.9",
     "@types/node": "catalog:",
-    "type-fest": "^4.33.0",
     "typescript": "catalog:"
   },
   "publishConfig": {

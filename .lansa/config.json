@@ -1,0 +1,9 @@
+{
+  "$schema": "../pkgs/lansa/schema.json",
+  "workspace": {
+    "providers": ["@lansa/provider-pnpm"],
+    "publishable": {
+      "names": ["!@lansa/provider-*"]
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "@lansa/core",
+  "name": "@lansa/config",
   "version": "1.0.0",
   "bugs": {
     "url": "https://github.com/arthurfiorette/lansa/issues"
@@ -7,7 +7,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arthurfiorette/lansa.git",
-    "directory": "pkgs/core"
+    "directory": "pkgs/config"
   },
   "funding": "https://github.com/sponsors/arthurfiorette",
   "license": "MIT",
@@ -20,15 +20,13 @@
     "test": "tsc --noEmit"
   },
   "dependencies": {
-    "@lansa/config": "workspace:^",
-    "micromatch": "^4.0.8",
+    "@sinclair/typebox": "^0.34.15",
+    "ajv": "^8.17.1",
+    "comment-json": "^4.2.5",
     "tslib": "catalog:"
   },
   "devDependencies": {
-    "@lansa/provider-pnpm": "workspace:^",
-    "@types/micromatch": "^4.0.9",
     "@types/node": "catalog:",
-    "type-fest": "^4.33.0",
     "typescript": "catalog:"
   },
   "publishConfig": {

@@ -1,2 +1,7 @@
 packages:
   - 'pkgs/*'
+
+catalog:
+  tslib: '^2.6'
+  '@types/node': '^20'
+  'typescript': '^5.4'

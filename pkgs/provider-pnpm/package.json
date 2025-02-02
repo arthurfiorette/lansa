@@ -1,5 +1,5 @@
 {
-  "name": "@lansa/core",
+  "name": "@lansa/provider-pnpm",
   "version": "1.0.0",
   "bugs": {
     "url": "https://github.com/arthurfiorette/lansa/issues"
@@ -7,7 +7,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arthurfiorette/lansa.git",
-    "directory": "pkgs/core"
+    "directory": "pkgs/provider-pnpm"
   },
   "funding": "https://github.com/sponsors/arthurfiorette",
   "license": "MIT",
@@ -20,15 +20,14 @@
     "test": "tsc --noEmit"
   },
   "dependencies": {
-    "@lansa/config": "workspace:^",
-    "micromatch": "^4.0.8",
+    "@lansa/core": "workspace:^",
+    "@pnpm/find-workspace-dir": "^1000.0.2",
+    "@pnpm/workspace.find-packages": "^1000.0.6",
+    "@pnpm/workspace.read-manifest": "^1000.0.2",
     "tslib": "catalog:"
   },
   "devDependencies": {
-    "@lansa/provider-pnpm": "workspace:^",
-    "@types/micromatch": "^4.0.9",
     "@types/node": "catalog:",
-    "type-fest": "^4.33.0",
     "typescript": "catalog:"
   },
   "publishConfig": {

@@ -1,0 +1,62 @@
+{
+  "name": "lansa",
+  "version": "1.0.0",
+  "bugs": {
+    "url": "https://github.com/arthurfiorette/lansa/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurfiorette/lansa.git",
+    "directory": "pkgs/cli"
+  },
+  "funding": "https://github.com/sponsors/arthurfiorette",
+  "license": "MIT",
+  "author": "Arthur Fiorette <kita@arthur.place>",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "bin": {
+    "lansa": "./bin/run.js",
+    "lansa-dev": "./bin/dev.js"
+  },
+  "files": ["src", "!**/tsconfig.tsbuildinfo", "dist", "schema.json", "oclif.manifest.json"],
+  "scripts": {
+    "build": "tsc",
+    "postbuild": "oclif manifest && oclif readme && node scripts/generate-schema.js",
+    "test": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@lansa/config": "workspace:^",
+    "@lansa/core": "workspace:^",
+    "@oclif/core": "^4.2.6",
+    "@oclif/plugin-autocomplete": "^3.2.20",
+    "@oclif/plugin-help": "^6.2.24",
+    "@oclif/plugin-not-found": "^3.2.40",
+    "@oclif/plugin-warn-if-update-available": "^3.1.32",
+    "tslib": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "oclif": "^4.17.24",
+    "typescript": "catalog:"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "oclif": {
+    "bin": "lansa",
+    "commands": "./dist/commands",
+    "dirname": "lansa",
+    "topicSeparator": " ",
+    "plugins": [
+      "@oclif/plugin-autocomplete",
+      "@oclif/plugin-help",
+      "@oclif/plugin-not-found",
+      "@oclif/plugin-warn-if-update-available"
+    ],
+    "warn-if-update-available": {
+      "frequency": 30,
+      "frequencyUnit": "seconds",
+      "timeoutInDays": 7
+    }
+  }
+}
