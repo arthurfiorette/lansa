@@ -1,0 +1,25 @@
+{
+  "name": "@lansa/monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "author": "Arthur Fiorette <me@arthur.place>",
+  "scripts": {
+    "build": "pnpm -r --no-bail run build",
+    "format": "biome format --write .",
+    "lint": "biome check .",
+    "lint:ci": "biome ci .",
+    "lint:fix": "biome check --write --unsafe .",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@arthurfiorette/biomejs-config": "^1.0.6",
+    "@biomejs/biome": "^1.9.4",
+    "husky": "^9.1.7"
+  },
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  }
+}

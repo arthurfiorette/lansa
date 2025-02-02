@@ -1,0 +1,32 @@
+{
+  "name": "@lansa/core",
+  "version": "1.0.0",
+  "bugs": {
+    "url": "https://github.com/arthurfiorette/lansa/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurfiorette/lansa.git",
+    "directory": "pkgs/core"
+  },
+  "funding": "https://github.com/sponsors/arthurfiorette",
+  "license": "MIT",
+  "author": "Arthur Fiorette <kita@arthur.place>",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "files": ["src", "!**/tsconfig.tsbuildinfo", "dist"],
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc --noEmit"
+  },
+  "dependencies": {
+    "tslib": "^2.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "typescript": "^5.4.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
